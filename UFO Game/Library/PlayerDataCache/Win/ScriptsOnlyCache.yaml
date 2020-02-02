@@ -2,7 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraController
+    - GameControlScript
     - PlayerController
+    - liferemover
+    - obstaclemover
     - rotator
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -18,9 +21,10 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/UFO Tutorial.unity:
+    Assets/UFO Challenge.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -48,17 +52,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9856}
     - Class: 114
+      Script: {instanceID: 9896}
+    - Class: 114
       Script: {instanceID: 10338}
     - Class: 114
-      Script: {instanceID: 10886}
+      Script: {instanceID: 10888}
     - Class: 114
-      Script: {instanceID: 10944}
+      Script: {instanceID: 10946}
     - Class: 114
-      Script: {instanceID: 10964}
+      Script: {instanceID: 10966}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11242}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11632}
+    - Class: 114
+      Script: {instanceID: 19750}
+    - Class: 114
+      Script: {instanceID: 32032}
+    - Class: 114
+      Script: {instanceID: 32062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,7 +378,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: ba7d017e3171d1970cbced635be3298c
+      Hash: bf9b5ee754c2a5b4bffcc7c39758b198
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -556,8 +568,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b5aadca17917f702c0c4051534755273
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: obstaclemover
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: liferemover
+  - hash:
+      serializedVersion: 2
+      Hash: 777cfdc8390733088dfd4745a4d85710
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameControlScript
   platform: 5
   scenePathNames:
-  - Assets/UFO Tutorial.unity
-  playerPath: C:/Users/User/Documents/GitHub/UFO/UFO Game/Builds/UFO Game Build 1/UFO
-    Game.exe
+  - Assets/UFO Challenge.unity
+  playerPath: C:/Users/User/Documents/GitHub/UFO/UFO Game/ChallengeBuilds/UFO Game.exe
